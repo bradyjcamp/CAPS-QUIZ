@@ -10,7 +10,6 @@
 
 - ![UML](./assets/Lab-14-UML%20(2).png)
 
-
 ## Description
 
 - Players compete to guess the number
