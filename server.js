@@ -16,10 +16,12 @@ quiz.on('connection', (socket) => {
   });
 
   socket.on('guess', payload => {
+    console.log(payload);
     quiz.emit('guess', payload);
   });
 
   socket.on('results', payload => {
+    console.log(payload);
     quiz.emit('results', payload);
   });
 
