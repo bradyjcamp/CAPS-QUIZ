@@ -21,7 +21,7 @@
 
 ## Pull Request
 
-[Lab 14 Pull Request]()
+[Lab 14 Pull Request](https://github.com/bradyjcamp/CAPS-QUIZ/pull/2)
 
 ## How to Get Started
 
