@@ -12,12 +12,10 @@
 
 ## Description
 
-- Players compete to guess the number
+- Guessing game between a player and the host/computer
 - Host reveals winner
 
 ## Links
-
-[Heroku]()
 
 [repo](https://github.com/bradyjcamp/CAPS-QUIZ)
 
@@ -34,13 +32,11 @@
   - jest
   - socket.io
   - socket cli
+  - prompt
 
 ## Running the app
 
-- npm start
+- npm start script for each server `server` -> `player` -> `host`
 - Endpoint/ error status
       - Return error message
 
-## Tests
-
-- Server Test `npm run test`
