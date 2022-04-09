@@ -31,15 +31,9 @@
 - Then enter `npm i`
 - Should install the following **dependencies**:
   - dotenv
-  - express
   - jest
-  - nodemon
-  - supertest
-  - sequelize
-  - sequelizeCLI
-  - sqlite3
-  - base64
-  - bCrypt
+  - socket.io
+  - socket cli
 
 ## Running the app
 
