@@ -6,25 +6,27 @@ const prompt = require('prompt');
 
 prompt.start();
 
-const properties = [{
-  guess: 'guess',
-}];
-
-let guess;
-
-socket.on('gameStart', payload => {
+let guess = 0;
+function getGuess(payload){
   console.log(payload);
-  prompt.get(properties, (error,result) => {
+  prompt.get(['guess'], (error,result) => {
     if (error) {
       console.log(error);
     }
-    guess = (result.question);
+    guess = (result.guess);
+    if(guess > 10){
+      getGuess('Please enter number between 1 and 10');
+    }
+    else if(guess > 0){
+      socket.emit('guess', guess);
+    }
   });
-  setTimeout(() => {
-    socket.emit('guess', guess);
-  }, 5000);
-});
+}
 
+socket.on('gameStart', payload => {
+  getGuess(payload);
+});
+  
 socket.on('results', payload => {
   console.log(payload);
 });
